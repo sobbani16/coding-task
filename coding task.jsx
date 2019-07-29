@@ -6,7 +6,7 @@ function reverseString(str) {
     }
     return newString;
 }
-console.time('function runtime');
+console.time('function runtime is ms');
 reverseString('Prashanth Sobbani');
 console.timeEnd('function runtime');
 

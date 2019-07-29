@@ -19,6 +19,7 @@ export default class Login extends Component {
   login() {
     if(this.state.username && (this.state.password).match(/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/)) {
       this.props.redirectPage('DashBoard');
+      console.log("Testing this");
     }
   }
   render() {
