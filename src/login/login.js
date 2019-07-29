@@ -16,6 +16,9 @@ export default class Login extends Component {
     const { value } = event.target;
     this.setState({password: value});
   }
+  testingFunction(){
+    console.log("testingFunction");
+  }
   login() {
     if(this.state.username && (this.state.password).match(/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/)) {
       this.props.redirectPage('DashBoard');
